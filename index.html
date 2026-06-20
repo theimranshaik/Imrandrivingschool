@@ -16,7 +16,7 @@
           colors: {
             'bg-light': '#EBF0F5',
             'card-dark': '#111E2E',
-            'brand-lime': '#C6F257', /* Darkened slightly to fix AAA/AA text contrast */
+            'brand-lime': '#C6F257',
             'text-dark': '#1C242C',
             'text-muted': '#596A7A',
           },
@@ -27,6 +27,19 @@
       }
     }
   </script>
+
+  <style>
+    /* Custom utility for the exact liquid glass inset layer from your design blueprint */
+    .glass-inset::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 24px;
+      z-index: 1;
+      box-shadow: rgba(217, 217, 217, 0.4) 1px 1px 1px inset;
+      pointer-events: none;
+    }
+  </style>
 
   <script type="application/ld+json">
   {
@@ -58,8 +71,8 @@
 
   <div class="max-w-[900px] mx-auto grid gap-5 grid-cols-1 md:grid-cols-3">
     
-    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
-      <div>
+    <div class="glass-inset bg-card-dark/80 backdrop-blur-[10px] text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div class="relative z-10">
         <div class="inline-block border border-white/30 rounded-full px-4 py-1.5 text-[13px] font-medium uppercase tracking-wider mb-6">Welcome Jmd People</div>
         <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-3">Imran Driving School</h1>
         <p class="text-base italic font-medium text-[#BCCCDA] mb-4">“We believe driving is not just a skill, it’s a freedom.”</p>
@@ -78,9 +91,9 @@
       <img src="nurulla.jpg" alt="Instructor Profile Showcase" class="w-full h-full object-cover block">
     </div>
     
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Our Story</h2>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
+      <div class="relative z-10">
+        <h2 class="font-semibold text-xl mb-4">Our Story</h2>
         <p class="text-[15px] text-text-dark mb-4">In 2011, Mr. Nurulla noticed that many road accidents were happening in Andhra Pradesh. He realized that the main reason for these accidents was that people did not know how to drive safely. 
             <br>
             <br>
@@ -91,24 +104,24 @@
       </div>
     </div>
     
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Our Socials</h2>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div class="relative z-10">
+        <h2 class="font-semibold text-xl mb-4">Our Socials</h2>
         <p class="text-[15px] text-text-dark mb-4"><a href="https://www.instagram.com/imran.driving.school_jmd/" target="_blank" class="inline-flex items-center justify-center bg-transparent border border-card-dark text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-card-dark hover:text-white mt-auto text-center">Follow us on Instagram</a></p>
       </div>
     </div>
 
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
-      <div>
-        <div class="text-[48px] font-semibold timeline-1 mb-3 text-card-dark">200+</div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Delivered Success</h2>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div class="relative z-10">
+        <div class="text-[48px] font-semibold mb-3 text-card-dark">200+</div>
+        <h2 class="font-semibold text-xl mb-4">Delivered Success</h2>
         <p class="text-[15px] text-text-dark mb-4">Our milestone of earning over 200+ five-star reviews speaks volumes about the deep trust our students place in our safe, professional training workflows.</p>
       </div>
     </div>
 
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Training</h2>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
+      <div class="relative z-10">
+        <h2 class="font-semibold text-xl mb-4">Training</h2>
         <p class="text-[15px] text-text-dark mb-4">We offer, <br>
         Beginner driving lessons, <br>
         Manual car training, <br>
@@ -117,37 +130,39 @@
       </div>
     </div>
 
-    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
-      <div>
+    <div class="glass-inset bg-card-dark/80 backdrop-blur-[10px] text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div class="relative z-10">
         <div class="inline-block border border-white/20 rounded-full px-4 py-1.5 text-[13px] font-medium uppercase tracking-wider mb-6">Why Choose Us</div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Expert Mentorship</h2>
+        <h2 class="font-semibold text-xl mb-4">Expert Mentorship</h2>
         <p class="text-[15px] text-[#A3B3C2] mb-4">Learn safely from our friendly, expert instructor (Nurulla, boasting 30+ years of domain experience in the automotive field). Enjoy flexible scheduling, convenient pickup metrics, and a stellar first-attempt passing rate.</p>
       </div>
     </div>
 
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Location</h2>
-        <p class="text-[15px] text-text-dark mb-4">Opposite to L.I.C office, Proddatur Road, Jammalamadugu – 516434</p>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
+      <div class="relative z-10 flex flex-col justify-between h-full">
+        <div>
+          <h2 class="font-semibold text-xl mb-4">Location</h2>
+          <p class="text-[15px] text-text-dark mb-4">Opposite to L.I.C office, Proddatur Road, Jammalamadugu – 516434</p>
+        </div>
+        <a href="https://share.google/BPWXva1ehPmMNauiN" target="_blank" class="inline-flex items-center justify-center bg-transparent border border-card-dark text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-card-dark hover:text-white mt-auto text-center">Open in Google Maps</a>
       </div>
-      <a href="https://share.google/BPWXva1ehPmMNauiN" target="_blank" class="inline-flex items-center justify-center bg-transparent border border-card-dark text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-card-dark hover:text-white mt-auto text-center">Open in Google Maps</a>
     </div>
 
-    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Fun Facts</h2>
+    <div class="glass-inset bg-white/70 backdrop-blur-[10px] rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div class="relative z-10">
+        <h2 class="font-semibold text-xl mb-4">Fun Facts</h2>
         <p class="text-[15px] text-text-dark mb-4">Did you know? Most students refer their friends to our driving school!</p>
         <p class="text-[15px] text-text-dark mb-4">Did you know? Most of our students pass their driving test on the first attempt!</p>
         <p class="text-[15px] text-text-dark mb-4">Did you know? Imran Driving School has been helping students achieve their driving dreams for over 15+ years!</p>
       </div>
     </div>
 
-    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-3 text-center items-center">
-      <div>
-        <h2 class="text-22px font-semibold text-xl mb-4">Start Your Driving Journey Today</h2>
+    <div class="glass-inset bg-card-dark/80 backdrop-blur-[10px] text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-3 text-center items-center">
+      <div class="relative z-10 flex flex-col items-center">
+        <h2 class="font-semibold text-xl mb-4">Start Your Driving Journey Today</h2>
         <p class="text-[15px] mb-6 text-[#BCCCDA]">Connect over support call at <strong>9848391673</strong> or <strong>7386232584</strong> to coordinate your slot.</p>
+        <a href="https://wa.me/9848391673?text=I'm%20interested%20to%20learn%20driving%2C%20could%20you%20provide%20me%20the%20details%3F" target="_blank" class="inline-flex items-center justify-center bg-brand-lime text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:opacity-90 mt-auto text-center">WhatsApp Now</a>
       </div>
-      <a href="https://wa.me/9848391673?text=I'm%20interested%20to%20learn%20driving%2C%20could%20you%20provide%20me%20the%20details%3F" target="_blank" class="inline-flex items-center justify-center bg-brand-lime text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:opacity-90 mt-auto text-center">WhatsApp Now</a>
     </div>
 
   </div>
