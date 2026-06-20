@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Driving School in Jammalamadugu | Imran Driving School</title>
@@ -6,193 +8,25 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <style>
-    :root {
-      --bg-light: #EBF0F5;
-      --card-white: #FFFFFF;
-      --card-dark: #111E2E;
-      --brand-lime: #D7FF83;
-      --text-dark: #1C242C;
-      --text-light: #FFFFFF;
-      --text-muted: #596A7A;
-      --border-radius: 24px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: var(--bg-light);
-      color: var(--text-dark);
-      padding: 24px 16px;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      display: grid;
-      gap: 20px;
-      grid-template-columns: 1fr;
-    }
-
-    /* Bento Grid Layout for Tablet and Desktop */
-    @media (min-width: 768px) {
-      .container {
-        grid-template-columns: repeat(3, 1fr);
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'bg-light': '#EBF0F5',
+            'card-dark': '#111E2E',
+            'brand-lime': '#C6F257', /* Darkened slightly to fix AAA/AA text contrast */
+            'text-dark': '#1C242C',
+            'text-muted': '#596A7A',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
       }
-      .hero-card { grid-column: span 2; }
-      .side-card { grid-column: span 1; }
-      .wide-card { grid-column: span 2; }
-      .full-card { grid-column: span 3; }
-      .img-card { grid-column: span 1; }
     }
-
-    /* Base Card Styling */
-    .card {
-      background-color: var(--card-white);
-      border-radius: var(--border-radius);
-      padding: 32px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card.dark {
-      background-color: var(--card-dark);
-      color: var(--text-light);
-    }
-
-    .card.lime {
-      background-color: var(--brand-lime);
-      color: var(--card-dark);
-    }
-
-    /* Typography */
-    h1 {
-      font-size: 32px;
-      font-weight: 600;
-      line-height: 1.2;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      font-size: 22px;
-      font-weight: 600;
-      margin-bottom: 16px;
-    }
-
-    .tag {
-      align-self: flex-start;
-      border: 1px solid rgba(0,0,0,0.15);
-      border-radius: 30px;
-      padding: 6px 16px;
-      font-size: 13px;
-      font-weight: 500;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 24px;
-    }
-
-    .dark .tag {
-      border-color: rgba(255,255,255,0.2);
-    }
-
-    p {
-      font-size: 15px;
-      color: var(--text-dark);
-      margin-bottom: 16px;
-    }
-
-    .dark p {
-      color: #A3B3C2;
-    }
-
-    .card.lime p {
-      color: rgba(17, 30, 46, 0.8);
-    }
-
-    .highlight-text {
-      font-size: 16px;
-      font-style: italic;
-      font-weight: 500;
-    }
-
-    /* Stat Number styling */
-    .stat-number {
-      font-size: 48px;
-      font-weight: 600;
-      line-height: 1;
-      margin-bottom: 12px;
-      color: var(--card-dark);
-    }
-
-    /* Buttons & Links */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background-color: var(--brand-lime);
-      color: var(--card-dark);
-      font-weight: 600;
-      font-size: 15px;
-      text-decoration: none;
-      padding: 14px 28px;
-      border-radius: 40px;
-      transition: transform 0.2s ease, opacity 0.2s ease;
-      margin-top: auto;
-      text-align: center;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.9;
-    }
-
-    .btn-secondary {
-      background-color: transparent;
-      border: 1px solid var(--card-dark);
-      color: var(--card-dark);
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--card-dark);
-      color: var(--text-light);
-    }
-
-    /* Icon Accent */
-    .icon-accent {
-      width: 40px;
-      height: 40px;
-      border-radius: 50px;
-      background-color: rgba(255,255,255,1);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 24px;
-      font-size: 18px;
-    }
-
-    /* Image Card Adjustments */
-    .card.bento-image-wrapper {
-      padding: 0;
-      min-height: 250px;
-    }
-
-    .bento-img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  </style>
+  </script>
 
   <script type="application/ld+json">
   {
@@ -220,92 +54,103 @@
   }
   </script>
 </head>
-<body>
+<body class="bg-bg-light text-text-dark font-sans px-4 py-6 leading-relaxed">
 
-  <div class="container">
+  <div class="max-w-[900px] mx-auto grid gap-5 grid-cols-1 md:grid-cols-3">
     
-    <div class="card dark hero-card">
+    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
       <div>
-        <div class="tag">Welcome Jmd People</div>
-        <h1>Imran Driving School</h1>
-        <p class="highlight-text">“We believe driving is not just a skill, it’s a freedom.”</p>
+        <div class="inline-block border border-white/30 rounded-full px-4 py-1.5 text-[13px] font-medium uppercase tracking-wider mb-6">Welcome Jmd People</div>
+        <h1 class="text-3xl md:text-4xl font-semibold leading-tight mb-3">Imran Driving School</h1>
+        <p class="text-base italic font-medium text-[#BCCCDA] mb-4">“We believe driving is not just a skill, it’s a freedom.”</p>
       </div>
     </div>
     
-    <div class="card img-card bento-image-wrapper">
-      <img src="imran.jpg" alt="Imran Driving School Showcase" class="bento-img">
+    <div class="bg-white rounded-[24px] flex flex-col justify-between overflow-hidden relative p-0 min-h-[250px] md:col-span-1">
+      <img src="imran.jpg" alt="Imran Driving School Showcase" class="w-full h-full object-cover block">
     </div>
 
-    <div class="card img-card bento-image-wrapper">
-      <img src="car.jpg" alt="Training Vehicle Showcase" class="bento-img">
+    <div class="bg-white rounded-[24px] flex flex-col justify-between overflow-hidden relative p-0 min-h-[250px] md:col-span-1">
+      <img src="car.jpg" alt="Training Vehicle Showcase" class="w-full h-full object-cover block">
     </div>
 
-    <div class="card img-card bento-image-wrapper">
-      <img src="nurulla.jpg" alt="Instructor Profile Showcase" class="bento-img">
+    <div class="bg-white rounded-[24px] flex flex-col justify-between overflow-hidden relative p-0 min-h-[250px] md:col-span-1">
+      <img src="nurulla.jpg" alt="Instructor Profile Showcase" class="w-full h-full object-cover block">
     </div>
     
-    <div class="card side-card">
-      <h2>Our Story</h2>
-      <p>In 2011, Mr. Nurulla noticed that many road accidents were happening in Andhra Pradesh. He realized that the main reason for these accidents was that people did not know how to drive safely. 
-          <br>
-          <br>
-​He wanted to fix this problem. He made it his mission to train people the right way and produce excellent drivers. His big goal was to reduce road accidents and make Andhra Pradesh a safer place for everyone. 
-<br>
-<br>
-​With this dream, he started a driving school. He named it Imran Driving School after his son, Imran.</p>
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
+      <div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Our Story</h2>
+        <p class="text-[15px] text-text-dark mb-4">In 2011, Mr. Nurulla noticed that many road accidents were happening in Andhra Pradesh. He realized that the main reason for these accidents was that people did not know how to drive safely. 
+            <br>
+            <br>
+  He wanted to fix this problem. He made it his mission to train people the right way and produce excellent drivers. His big goal was to reduce road accidents and make Andhra Pradesh a safer place for everyone. 
+  <br>
+  <br>
+  With this dream, he started a driving school. He named it Imran Driving School after his son, Imran.</p>
+      </div>
     </div>
     
-     <div class="card wide-card">
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
       <div>
-        <h2>Our Socials</h2>
-        <p><a href="https://www.instagram.com/imran.driving.school_jmd/" target="_blank" class="btn btn-secondary">Follow us on Instagram</a></p>
+        <h2 class="text-22px font-semibold text-xl mb-4">Our Socials</h2>
+        <p class="text-[15px] text-text-dark mb-4"><a href="https://www.instagram.com/imran.driving.school_jmd/" target="_blank" class="inline-flex items-center justify-center bg-transparent border border-card-dark text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-card-dark hover:text-white mt-auto text-center">Follow us on Instagram</a></p>
       </div>
     </div>
 
-    <div class="card wide-card">
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
       <div>
-        <div class="stat-number">200+</div>
-        <h2>Delivered Success</h2>
-        <p>Our milestone of earning over 200+ five-star reviews speaks volumes about the deep trust our students place in our safe, professional training workflows.</p>
+        <div class="text-[48px] font-semibold timeline-1 mb-3 text-card-dark">200+</div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Delivered Success</h2>
+        <p class="text-[15px] text-text-dark mb-4">Our milestone of earning over 200+ five-star reviews speaks volumes about the deep trust our students place in our safe, professional training workflows.</p>
       </div>
     </div>
 
-    <div class="card side-card">
-      <h2>Training</h2>
-      <p>We offer, <br>
-      Beginner driving lessons, <br>
-      Manual car training, <br>
-      Automatic car training(soon), <br>
-      Full driving license test assistance</p>
-    </div>
-
-    <div class="card dark wide-card">
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
       <div>
-        <div class="tag">Why Choose Us</div>
-        <h2>Expert Mentorship</h2>
-        <p>Learn safely from our friendly, expert instructor (Nurulla, boasting 30+ years of domain experience in the automotive field). Enjoy flexible scheduling, convenient pickup metrics, and a stellar first-attempt passing rate.</p>
+        <h2 class="text-22px font-semibold text-xl mb-4">Training</h2>
+        <p class="text-[15px] text-text-dark mb-4">We offer, <br>
+        Beginner driving lessons, <br>
+        Manual car training, <br>
+        Automatic car training(soon), <br>
+        Full driving license test assistance</p>
       </div>
     </div>
 
-    <div class="card side-card">
-      <h2>Location</h2>
-      <p>Opposite to L.I.C office, Proddatur Road, Jammalamadugu – 516434</p>
-      <a href="https://share.google/BPWXva1ehPmMNauiN" target="_blank" class="btn btn-secondary">Open in Google Maps</a>
+    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div>
+        <div class="inline-block border border-white/20 rounded-full px-4 py-1.5 text-[13px] font-medium uppercase tracking-wider mb-6">Why Choose Us</div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Expert Mentorship</h2>
+        <p class="text-[15px] text-[#A3B3C2] mb-4">Learn safely from our friendly, expert instructor (Nurulla, boasting 30+ years of domain experience in the automotive field). Enjoy flexible scheduling, convenient pickup metrics, and a stellar first-attempt passing rate.</p>
+      </div>
     </div>
 
-    <div class="card wide-card">
-      <h2>Fun Facts</h2>
-      <p>Did you know? Most students refer their friends to our driving school!</p>
-      <p>Did you know? Most of our students pass their driving test on the first attempt!</p>
-      <p>Did you know? Imran Driving School has been helping students achieve their driving dreams for over 15+ years!</p>
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-1">
+      <div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Location</h2>
+        <p class="text-[15px] text-text-dark mb-4">Opposite to L.I.C office, Proddatur Road, Jammalamadugu – 516434</p>
+      </div>
+      <a href="https://share.google/BPWXva1ehPmMNauiN" target="_blank" class="inline-flex items-center justify-center bg-transparent border border-card-dark text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:bg-card-dark hover:text-white mt-auto text-center">Open in Google Maps</a>
     </div>
 
-    <div class="card full-card dark" style="text-align: center; align-items: center;">
-      <h2>Start Your Driving Journey Today</h2>
-      <p style="margin-bottom: 24px;">Connect over support call at <strong>9848391673</strong> or <strong>7386232584</strong> to coordinate your slot.</p>
-      <a href="https://wa.me/9848391673?text=I'm%20interested%20to%20learn%20driving%2C%20could%20you%20provide%20me%20the%20details%3F" target="_blank" class="btn">WhatsApp Now</a>
+    <div class="bg-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-2">
+      <div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Fun Facts</h2>
+        <p class="text-[15px] text-text-dark mb-4">Did you know? Most students refer their friends to our driving school!</p>
+        <p class="text-[15px] text-text-dark mb-4">Did you know? Most of our students pass their driving test on the first attempt!</p>
+        <p class="text-[15px] text-text-dark mb-4">Did you know? Imran Driving School has been helping students achieve their driving dreams for over 15+ years!</p>
+      </div>
+    </div>
+
+    <div class="bg-card-dark text-white rounded-[24px] p-8 flex flex-col justify-between overflow-hidden relative md:col-span-3 text-center items-center">
+      <div>
+        <h2 class="text-22px font-semibold text-xl mb-4">Start Your Driving Journey Today</h2>
+        <p class="text-[15px] mb-6 text-[#BCCCDA]">Connect over support call at <strong>9848391673</strong> or <strong>7386232584</strong> to coordinate your slot.</p>
+      </div>
+      <a href="https://wa.me/9848391673?text=I'm%20interested%20to%20learn%20driving%2C%20could%20you%20provide%20me%20the%20details%3F" target="_blank" class="inline-flex items-center justify-center bg-brand-lime text-card-dark font-semibold text-[15px] no-underline px-7 py-3.5 rounded-full transition duration-200 ease-in-out hover:-translate-y-0.5 hover:opacity-90 mt-auto text-center">WhatsApp Now</a>
     </div>
 
   </div>
 
-</body></html>
+</body>
+</html>
